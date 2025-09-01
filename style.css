@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.search {
+  margin-top: 10px;
+}
+.search input {
+  padding: 8px;
+  width: 60%;
+}
+.search button {
+  padding: 8px 15px;
+  margin-left: 5px;
+}
+#news {
+  padding: 20px;
+}
+.news-item {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
