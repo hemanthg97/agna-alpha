@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agna Alpha News Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Agna Alpha News Dashboard</h1>
-    <div class="search">
-      <input id="query" type="text" placeholder="Ask about the latest startup news...">
-      <button onclick="askAI()">Ask</button>
-    </div>
-    <p id="answer"></p>
-  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Agna Alpha</h2>
+      <nav>
+        <a href="#"><img src="assets/news.svg" alt=""> Entrackr</a>
+        <a href="#"><img src="assets/story.svg" alt=""> YourStory</a>
+        <a href="#"><img src="assets/tech.svg" alt=""> Inc42</a>
+        <a href="#"><img src="assets/mag.svg" alt=""> The Ken</a>
+      </nav>
+    </aside>
 
-  <main>
-    <h2>Latest News Feeds</h2>
-    <div id="news"></div>
-  </main>
-
-  <script src="script.js"></script>
+    <main class="main-content">
+      <header>
+        <h1>Agna Alpha News Dashboard</h1>
+      </header>
+      <section class="cards">
+        <div class="card">
+          <img src="assets/placeholder1.svg" alt="News">
+          <h3>Placeholder Headline</h3>
+          <p>Short description of the futuristic article goes here.</p>
+        </div>
+        <div class="card">
+          <img src="assets/placeholder2.svg" alt="News">
+          <h3>Another Placeholder</h3>
+          <p>Clean, minimal, modern UI layout with dark theme.</p>
+        </div>
+        <div class="card">
+          <img src="assets/placeholder3.svg" alt="News">
+          <h3>Sample Title</h3>
+          <p>Replace this text with live news or AI content later.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <p>© 2025 Agna Alpha. Futuristic Minimal UI.</p>
+  </footer>
 </body>
 </html>
