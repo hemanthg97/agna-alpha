@@ -6,45 +6,40 @@
   <title>Agna Alpha News Dashboard</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter&display=swap" rel="stylesheet">
-  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="container">
     <aside class="sidebar">
       <h2>Agna Alpha</h2>
       <nav>
-        <a href="#"><img src="assets/news.svg" alt=""> Entrackr</a>
-        <a href="#"><img src="assets/story.svg" alt=""> YourStory</a>
-        <a href="#"><img src="assets/tech.svg" alt=""> Inc42</a>
-        <a href="#"><img src="assets/mag.svg" alt=""> The Ken</a>
+        <a href="#">Entrackr</a>
+        <a href="#">YourStory</a>
+        <a href="#">Inc42</a>
+        <a href="#">The Ken</a>
+        <a href="#">VCCircle</a>
       </nav>
     </aside>
 
     <main class="main-content">
       <header>
         <h1>Agna Alpha News Dashboard</h1>
+        <div class="search">
+          <input id="searchInput" type="text" placeholder="Ask AI about the latest news..." />
+          <button id="searchBtn">Ask AI</button>
+        </div>
+        <p id="aiResult"></p>
       </header>
-      <section class="cards">
-        <div class="card">
-          <img src="assets/placeholder1.svg" alt="News">
-          <h3>Placeholder Headline</h3>
-          <p>Short description of the futuristic article goes here.</p>
-        </div>
-        <div class="card">
-          <img src="assets/placeholder2.svg" alt="News">
-          <h3>Another Placeholder</h3>
-          <p>Clean, minimal, modern UI layout with dark theme.</p>
-        </div>
-        <div class="card">
-          <img src="assets/placeholder3.svg" alt="News">
-          <h3>Sample Title</h3>
-          <p>Replace this text with live news or AI content later.</p>
-        </div>
+
+      <section>
+        <h2>Latest News</h2>
+        <div id="newsContainer" class="cards"></div>
       </section>
     </main>
   </div>
   <footer>
-    <p>© 2025 Agna Alpha. Futuristic Minimal UI.</p>
+    <p>© 2025 Agna Alpha. Futuristic UI with Live News + AI.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
