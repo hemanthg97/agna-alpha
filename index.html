@@ -1,45 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agna Alpha News Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <h2>Agna Alpha</h2>
-      <nav>
-        <a href="#">Entrackr</a>
-        <a href="#">YourStory</a>
-        <a href="#">Inc42</a>
-        <a href="#">The Ken</a>
-        <a href="#">VCCircle</a>
-      </nav>
-    </aside>
-
-    <main class="main-content">
-      <header>
-        <h1>Agna Alpha News Dashboard</h1>
-        <div class="search">
-          <input id="searchInput" type="text" placeholder="Ask AI about the latest news..." />
-          <button id="searchBtn">Ask AI</button>
-        </div>
-        <p id="aiResult"></p>
-      </header>
-
-      <section>
-        <h2>Latest News</h2>
-        <div id="newsContainer" class="cards"></div>
-      </section>
-    </main>
+  <div class="sidebar">
+    <h2>Agna Alpha</h2>
+    <ul>
+      <li>Entrackr</li>
+      <li>YourStory</li>
+      <li>Inc42</li>
+      <li>The Ken</li>
+      <li>VCCircle</li>
+    </ul>
   </div>
-  <footer>
-    <p>© 2025 Agna Alpha. Futuristic UI with Live News + AI.</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <div class="main">
+    <h1>Agna Alpha News Dashboard</h1>
+    <div class="search">
+      <input id="query" type="text" placeholder="What's the latest">
+      <button onclick="askAI()">Ask AI</button>
+    </div>
+    <div id="results">Latest News</div>
+  </div>
+  <script src="search.js"></script>
 </body>
 </html>
