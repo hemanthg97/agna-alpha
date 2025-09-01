@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0e0e0e;
+  color: #f2f2f2;
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background: #111;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.8);
+}
+
+.sidebar h2 {
+  color: cyan;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.sidebar li:hover {
+  color: #fff;
+}
+
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+h1 {
+  color: violet;
+}
+
+.search-bar {
+  display: flex;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  background: cyan;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#results {
+  margin-top: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  color: cyan;
+}
